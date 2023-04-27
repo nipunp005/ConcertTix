@@ -2,7 +2,7 @@
 This is a C++ based application for booking concert tickets. It allows users to browse upcoming concerts and events, select the seats they want to purchase, and complete the booking process.
 
 ## Requirements
-- G++ compiler - ver 11.3.0
+- g++ compiler - ver 11.3.0
 - GNU Make v4.3
 - CppUTest v8.3
 - gcov (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
@@ -52,18 +52,35 @@ Following is the directory structure
 
 ## Usage
 
-- Find the binary in under the build folder. Launch the application ./booking_app 
-- To run the unit tests, launch the application : ./unit_test
+- Find the binary in under the build folder. Launch the application 
+```
+./build/booking_app 
+
+```
+- To run the unit tests, launch the application :
+
+``` 
+./build/unit_test
+
+```
 
 ## Generate Coverage report
 
-- Once build is completed , go to root folder run script gen_cov_report.sh
-- Find coverage report in html format under : build/coverage folder. Open index.html to see coverage report.
+- Once build is completed , go to root folder run script ***gen_cov_report.sh***
+- Find coverage report in html format under : ***build/coverage*** folder. Open ***index.html*** to see coverage report.
 
 ### Docker
 
 - To build : sudo docker build -t booking-app .
 - To run   : sudo docker run -it booking-app 
+- Alternatively you can download a pre-built docker image : 
+```
+docker pull nipunp005/concertix:latest 
+```
+and run it using : 
+
+```docker run -it nipunp005/concertix
+```
 
 ## License
 
