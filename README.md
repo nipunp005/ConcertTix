@@ -86,6 +86,14 @@ docker run -it nipunp005/concertix
 
 ```
 
+## Known Limitations 
+
+- Unit test coverage currently limited to 3 classes only : Seat , Concert, Theatre. (100% coverage).
+- Unit test implementation for Booking and OnlineBooking class are not implemented. (0% coverage).
+- No save restore feature.
+- Simultaneous multiple request handling is absent. 
+- Embedded CLI interface support only as of now.  
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use and modify this code as you see fit.
