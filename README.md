@@ -74,12 +74,16 @@ Following is the directory structure
 - To build : sudo docker build -t booking-app .
 - To run   : sudo docker run -it booking-app 
 - Alternatively you can download a pre-built docker image : 
+
 ```
-docker pull nipunp005/concertix:latest 
+docker pull nipunp005/concertix:latest
+ 
 ```
 and run it using : 
 
-```docker run -it nipunp005/concertix
+```
+docker run -it nipunp005/concertix
+
 ```
 
 ## License
