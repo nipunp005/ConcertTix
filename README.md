@@ -3,7 +3,10 @@ This is a C++ based application for booking concert tickets. It allows users to 
 
 ## Requirements
 - G++ compiler - ver 11.3.0
-- GNU Make 4.3
+- GNU Make v4.3
+- CppUTest v8.3
+- gcov (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
+- lcov: LCOV version 1.14
 - x86_64-pc-linux
 - Docker version 23.0.4, build f480fb1
 
@@ -51,6 +54,11 @@ Following is the directory structure
 
 - Find the binary in under the build folder. Launch the application ./booking_app 
 - To run the unit tests, launch the application : ./unit_test
+
+## Generate Coverage report
+
+- Once build is completed , go to root folder run script gen_cov_report.sh
+- Find coverage report in html format in : build/coverage folder. Open index.html to see coverage.
 
 ### Docker
 

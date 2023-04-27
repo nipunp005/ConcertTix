@@ -1,7 +1,7 @@
 # Compiler and flags
 CC=g++
 #CFLAGS=-std=c++17 -Wall -Wextra -pedantic -Iinc
-CFLAGS=-std=c++17 -Iinc -I/usr/local/include/CppUTest
+CFLAGS=-std=c++17 -Iinc -I/usr/local/include/CppUTest -fprofile-arcs -ftest-coverage
 
 # Directories
 SRCDIR=src
