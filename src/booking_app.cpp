@@ -5,20 +5,20 @@
 int main() {
 
 	// Create some sample concerts
-	Concert concert1("Concert1", "Artist1", "2023-05-01");
-	Concert concert2("Concert2", "Artist2", "2023-06-01");
+	Concert concert1("Electric-Dreams", "Metallica", "2023-05-01");
+	Concert concert2("Retro-Revival", "Silk Sonic", "2023-06-01");
 
 	// Create some sample theaters
-	Theater theater1("Theater1", 20);
-	Theater theater2("Theater2", 20);
-	Theater theater3("Theater3", 20);
+	Theater theater1("Groovebox-Theater", 20);
+	Theater theater2("Funkadelic-Playhouse", 20);
+	Theater theater3("Jazzy-Curtain-Call-Theatre", 20);
 
 	// Add the theaters to the concerts
 	std::vector<Theater> theaters1 = {theater1, theater2};
 	std::vector<Theater> theaters2 = {theater2, theater3};
 
-	std::pair<std::string, std::vector<Theater>> concertTheaters1 = {"Concert1", theaters1};
-	std::pair<std::string, std::vector<Theater>> concertTheaters2 = {"Concert2", theaters2};
+	std::pair<std::string, std::vector<Theater>> concertTheaters1 = {"Electric-Dreams", theaters1};
+	std::pair<std::string, std::vector<Theater>> concertTheaters2 = {"Retro-Revival", theaters2};
 
 	std::vector<std::pair<std::string, std::vector<Theater>>> concertTheaters = {concertTheaters1, concertTheaters2};
 
@@ -38,9 +38,9 @@ int main() {
 	    seats2.push_back(seat);
 	}
 
-	std::pair<std::string, std::vector<Seat>> theaterSeats1 = {"Theater1", seats1};
-	std::pair<std::string, std::vector<Seat>> theaterSeats2 = {"Theater2", seats1};
-	std::pair<std::string, std::vector<Seat>> theaterSeats3 = {"Theater3", seats2};
+	std::pair<std::string, std::vector<Seat>> theaterSeats1 = {"Groovebox-Theater", seats1};
+	std::pair<std::string, std::vector<Seat>> theaterSeats2 = {"Funkadelic-Playhouse", seats1};
+	std::pair<std::string, std::vector<Seat>> theaterSeats3 = {"Jazzy-Curtain-Call-Theatre", seats2};
 
 	std::vector<std::pair<std::string, std::vector<Seat>>> theaterSeats = {theaterSeats1, theaterSeats2, theaterSeats3};
 
@@ -50,15 +50,15 @@ int main() {
 	bookingSystem.addConcert(concert1);
 	bookingSystem.addConcert(concert2);
 
-	bookingSystem.addTheaterForConcert("Concert1", theater1);
-	bookingSystem.addTheaterForConcert("Concert1", theater2);
-	bookingSystem.addTheaterForConcert("Concert2", theater2);
-	bookingSystem.addTheaterForConcert("Concert2", theater3);
+	bookingSystem.addTheaterForConcert("Electric-Dreams", theater1);
+	bookingSystem.addTheaterForConcert("Electric-Dreams", theater2);
+	bookingSystem.addTheaterForConcert("Retro-Revival", theater2);
+	bookingSystem.addTheaterForConcert("Retro-Revival", theater3);
 
-	bookingSystem.addSeatsForTheater("Concert1", "Theater1", seats1);
-	bookingSystem.addSeatsForTheater("Concert1", "Theater2", seats1);
-	bookingSystem.addSeatsForTheater("Concert2", "Theater2", seats1);
-	bookingSystem.addSeatsForTheater("Concert2", "Theater3", seats2);
+	bookingSystem.addSeatsForTheater("Electric-Dreams", "Groovebox-Theater", seats1);
+	bookingSystem.addSeatsForTheater("Electric-Dreams", "Funkadelic-Playhouse", seats1);
+	bookingSystem.addSeatsForTheater("Retro-Revival", "Funkadelic-Playhouse", seats1);
+	bookingSystem.addSeatsForTheater("Retro-Revival", "Jazzy-Curtain-Call-Theatre", seats2);
 
 	// ======================================= Main loop Begins here ============================================== //
 

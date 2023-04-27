@@ -58,7 +58,7 @@ Following is the directory structure
 ## Generate Coverage report
 
 - Once build is completed , go to root folder run script gen_cov_report.sh
-- Find coverage report in html format in : build/coverage folder. Open index.html to see coverage.
+- Find coverage report in html format under : build/coverage folder. Open index.html to see coverage report.
 
 ### Docker
 
